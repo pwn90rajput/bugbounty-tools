@@ -24,39 +24,29 @@ amass enum -d example.com -o subs.txt
 Enumerates subdomains for example.com and saves them to subs.txt.
 
 🌐 2. Subdomain Discovery with Assetfinder
-bash
-Copy
-Edit
+
 assetfinder --subs-only example.com > assetfinder.txt
 Fast discovery of subdomains using public data sources.
 
 🚪 3. Directory Brute-Forcing with ffuf
-bash
-Copy
-Edit
+
 ffuf -u https://example.com/FUZZ -w /usr/share/wordlists/dirb/common.txt
 Fuzzes directories on the target web server.
 
 🗂 4. Directory Enumeration with dirsearch
-bash
-Copy
-Edit
+
 python3 dirsearch.py -u https://example.com -e php,html,txt
 Scans for directories and files with common extensions.
 
 🧪 5. Intercept Traffic with Burp Suite
-bash
-Copy
-Edit
+
 burpsuite
 Launch Burp and configure your browser to use 127.0.0.1:8080 as a proxy.
 
 Capture and analyze web requests for vulnerabilities.
 
 🔁 6. Start OWASP ZAP
-bash
-Copy
-Edit
+
 zaproxy
 An alternative to Burp for intercepting and scanning websites.
 
